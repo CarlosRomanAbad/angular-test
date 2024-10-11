@@ -1,0 +1,16 @@
+
+    <ul>
+        <li>Nombre : {{nombre}} </li>
+        <li>Apellido : {{apellido}} </li>
+        <li><span [class]="lifetime">Edad  : {{edad}} </span></li>
+        <li>Calcular Año : {{(calculateYear())}}</li>
+    </ul>
+
+
+    <section>
+   
+        <div class="example-button-row">
+          <button mat-raised-button (click)="edad = 40">Basic</button>
+          <button mat-raised-button  (click)="edad = 20">Disabled</button>
+        </div>
+      </section>
